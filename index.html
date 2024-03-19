@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #ff7e5f, #feb47b, #ffeca4, #a8f9ff, #5f98ff);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background-color: rgba(66, 1, 66, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        header:hover {
+            background-color: rgba(121, 28, 248, 0.8); /* Change header color on hover */
+        }
+
+        .container {
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Allow cards to wrap to the next line */
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Add a slight lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+        }
+
+        .card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        h2 {
+            color: purple;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Animation */
+        @keyframes rotateCard {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .card:hover {
+            animation: rotateCard 0.8s ease-in-out; /* Apply rotation animation on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Story</h1>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <img src="images/photo1.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo2.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo3.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo4.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images/photo5.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo6.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo7.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo8.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images/photo9.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo10.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo11.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/photo12.jpg" alt="Inspiration">
+            <div class="card-content">
+                <h2>Inspiration</h2>
+                <p>Women inspire us to reach for our dreams.</p>
+            </div>
+        </div>       
+    </div>
+    
+</body>
+</html>
